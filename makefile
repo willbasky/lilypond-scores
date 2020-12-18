@@ -6,7 +6,11 @@ SCORE_PATH := ${BASE_PATH}/scores
 
 
 convert:
-	ly2video -i Greensleeves_2.ly -q 1 -s -f 60 -r 300 -p 2,3 -t --ttf ${PWD}/Montserrat-Regular.ttf -x 1920 -y 1080
+ifdef path
+	$(info Running convertion to avi)
+	ly2video  -q 1 -s -f 60 -r 600 -p 2,3 -t --ttf ${PWD}/Montserrat-Regular.ttf -x 1920 -y 1080 \
+				-i ${path}
+endif
 
 build:
 	SCORE_PATH=${SCORE_PATH} BASE_PATH=${BASE_PATH} docker-compose -p ly2video -f ${LY2VIDEO_PATH}/docker-compose.yml up --build
