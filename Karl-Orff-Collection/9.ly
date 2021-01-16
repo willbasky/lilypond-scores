@@ -7,7 +7,7 @@
 \paper {
   top-margin = 20
   indent = #0
-  system-count = #3
+  system-count = #4
   % print-all-headers = ##t
 }
 
@@ -23,7 +23,7 @@
 
 \markup { \vspace #1 }
 
-
+fine = \markup { \bold \large Fine }
 
 \score {
 
@@ -72,37 +72,37 @@
       \key g \major
       \time 3/4
       \set doubleSlurs = ##t
-      <d g,>2.->(        |
-      <d g,>2) <d g,>4-_ |
-      <d g,>2.->(        |
-      <d g,>2) <d g,>4-_ |
+      <d g,>2.->~       |
+      <d g,>2 <d g,>4-_ |
+      <d g,>2.->~       |
+      <d g,>2 <d g,>4-_ |
 
-      <d g,>2.(        |
-      <d g,>)(         |
-      <d g,>)(         |
-      <d g,>2) <d g,>4-_ |
+      <d g,>2.~         |
+      <d g,>~           |
+      <d g,>~           |
+      <d g,>2 <d g,>4-_ |
 
       \bar "|."
+      \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
       \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
       \once \override Score.RehearsalMark.direction = #DOWN
+      \mark \markup { \bold \large Fine }
 
-      \mark "Fine"
+      <d g,>2.~ |
+      <d g,>~   |
+      <d g,>~   |
+      <d g,>    |
 
-      <d g,>2.( |
-      <d g,>)(  |
-      <d g,>)(  |
-      <d g,>)   |
-
-      <d g,>(   |
-      <d g,>)(  |
-      <d g,>)(  |
-      <d g,>)   |
+      <d g,>~   |
+      <d g,>~   |
+      <d g,>~   |
+      <d g,>    |
 
 
       \bar "||"
       \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
       \once \override Score.RehearsalMark.direction = #DOWN
-      \mark "D.C."
+      \mark \markup { \italic D.C. }
 
 
 

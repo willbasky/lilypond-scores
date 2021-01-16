@@ -31,10 +31,10 @@
                 .staffgroup-staff-spacing
                 .basic-distance = #20
     }
-
   <<
     \new Staff = "RH" \relative c'' {
       \clef "treble"
+      \numericTimeSignature
       \time 4/4
       \tempo "" 2 = 104
       g4 g4 a4 a4 |
@@ -60,6 +60,7 @@
 
     \new Staff = "LH" {
       \clef "bass"
+      \numericTimeSignature
       \time 4/4
       \set doubleSlurs = ##t
       <c g>1( |

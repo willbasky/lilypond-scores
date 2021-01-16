@@ -37,6 +37,7 @@
   <<
     \new Staff = "RH" \relative c'' {
       \clef "treble"
+      \numericTimeSignature
       \time 4/4
       g4 g4 a4 a4 |
       g2 e2 |
@@ -61,6 +62,7 @@
 
     \new Staff = "LH" {
       \clef "bass"
+      \numericTimeSignature
       \time 4/4
       \set doubleSlurs = ##t
       <c g>1( |
