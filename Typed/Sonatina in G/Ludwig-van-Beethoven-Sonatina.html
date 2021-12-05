@@ -1,0 +1,485 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+#document {
+  background: #232629;
+  color: #eff0f1;
+}
+
+/* base styles */
+.comment {
+  color: #808080;
+  font-style: italic;
+}
+
+.error {
+  color: #ff0000;
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+}
+
+.escape {
+  color: #008080;
+}
+
+.function {
+  color: #35c064;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.keyword {
+  font-weight: bold;
+}
+
+.string {
+  color: #c0ab61;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.value {
+  color: #c67f37;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.variable {
+  color: #22b5c5;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* mode: html */
+span.html-attribute {
+  
+}
+
+span.html-comment {
+  
+}
+
+span.html-entityref {
+  
+}
+
+span.html-lilypondtag {
+  
+}
+
+span.html-string {
+  
+}
+
+span.html-tag {
+  
+}
+
+span.html-value {
+  
+}
+
+/* mode: lilypond */
+span.lilypond-accidental {
+  
+}
+
+span.lilypond-articulation {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+span.lilypond-beam {
+  
+}
+
+span.lilypond-check {
+  
+}
+
+span.lilypond-chord {
+  
+}
+
+span.lilypond-command {
+  
+}
+
+span.lilypond-comment {
+  
+}
+
+span.lilypond-context {
+  font-weight: bold;
+}
+
+span.lilypond-delimiter {
+  
+}
+
+span.lilypond-duration {
+  color: #00b6b6;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+span.lilypond-dynamic {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+span.lilypond-error {
+  
+}
+
+span.lilypond-figbass {
+  
+}
+
+span.lilypond-figbmodif {
+  
+}
+
+span.lilypond-figbstep {
+  
+}
+
+span.lilypond-fingering {
+  color: #ff8000;
+}
+
+span.lilypond-grob {
+  color: #c000c0;
+}
+
+span.lilypond-keyword {
+  
+}
+
+span.lilypond-lyricmode {
+  color: #006000;
+}
+
+span.lilypond-lyrictext {
+  color: #006000;
+}
+
+span.lilypond-markup {
+  color: #008000;
+  font-weight: normal;
+}
+
+span.lilypond-octave {
+  
+}
+
+span.lilypond-pitch {
+  
+}
+
+span.lilypond-property {
+  
+}
+
+span.lilypond-repeat {
+  
+}
+
+span.lilypond-slur {
+  font-weight: bold;
+}
+
+span.lilypond-specifier {
+  
+}
+
+span.lilypond-string {
+  
+}
+
+span.lilypond-stringescape {
+  
+}
+
+span.lilypond-stringnumber {
+  color: #ff8000;
+}
+
+span.lilypond-usercommand {
+  
+}
+
+span.lilypond-uservariable {
+  
+}
+
+span.lilypond-value {
+  
+}
+
+span.lilypond-variable {
+  
+}
+
+/* mode: mup */
+span.mup-comment {
+  
+}
+
+span.mup-macro {
+  
+}
+
+span.mup-preprocessor {
+  
+}
+
+span.mup-string {
+  
+}
+
+span.mup-stringescape {
+  
+}
+
+/* mode: scheme */
+span.scheme-comment {
+  
+}
+
+span.scheme-constant {
+  
+}
+
+span.scheme-delimiter {
+  
+}
+
+span.scheme-function {
+  
+}
+
+span.scheme-keyword {
+  
+}
+
+span.scheme-lilypond {
+  
+}
+
+span.scheme-number {
+  
+}
+
+span.scheme-scheme {
+  
+}
+
+span.scheme-string {
+  
+}
+
+span.scheme-stringescape {
+  
+}
+
+span.scheme-variable {
+  
+}
+
+/* mode: texinfo */
+span.texinfo-attribute {
+  
+}
+
+span.texinfo-block {
+  
+}
+
+span.texinfo-comment {
+  
+}
+
+span.texinfo-escapechar {
+  
+}
+
+span.texinfo-keyword {
+  
+}
+
+span.texinfo-verbatim {
+  
+}
+
+</style>
+</head>
+<body>
+<pre id="document"><span class="lilypond-keyword keyword">\version</span> <span class="lilypond-string string">"2.20.0"
+
+</span><span class="lilypond-keyword keyword">\include</span> <span class="lilypond-string string">"english.ly"
+</span><span class="lilypond-keyword keyword">\include</span> <span class="lilypond-string string">"articulate.ly"
+
+</span><span class="lilypond-keyword keyword">\paper</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-variable variable">top-margin</span> = <span class="lilypond-value value">20
+  </span><span class="lilypond-variable variable">indent</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">0
+  </span><span class="lilypond-variable variable">system-count</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">9
+  </span><span class="lilypond-comment comment">% print-all-headers = ##t
+</span><span class="lilypond-delimiter keyword">}
+
+
+</span><span class="lilypond-keyword keyword">\header</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-variable variable">title</span> = <span class="lilypond-string string">"Sonatina"
+  </span><span class="lilypond-variable variable">subtitle</span> = <span class="lilypond-string string">"in G major"
+  </span><span class="lilypond-comment comment">% subsubtitle = "Piano Studies: Little Playng Book"
+  </span><span class="lilypond-variable variable">composer</span> = <span class="lilypond-string string">"Ludwig van Beethoven"
+  </span><span class="lilypond-comment comment">% poet = "English Words by Norman Gimbel"
+  % opus = "1933"
+  </span><span class="lilypond-variable variable">tagline</span> = <span class="lilypond-string string">"Maria Sergeevna 2021"
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-markup function">\markup</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-markup function">\vspace</span> <span class="scheme-scheme">#</span><span class="scheme-number value">0</span> <span class="lilypond-delimiter keyword">}</span> <span class="lilypond-comment comment">% отступ от заголовков
+
+</span><span class="lilypond-uservariable">upper</span> =
+<span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">'</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\tempo</span> <span class="lilypond-string string">"Moderato"
+  </span><span class="lilypond-command function">\clef</span> <span class="lilypond-string string">"treble"
+  </span><span class="lilypond-command function">\key</span> <span class="lilypond-pitch">g</span> <span class="lilypond-command function">\major
+  \time</span> <span class="lilypond-value value">4/4
+  </span><span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-dynamic">\p</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">5</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">c</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">a</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">4</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span> <span class="lilypond-check">|
+
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">c</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">a</span><span class="lilypond-duration">2</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+
+    </span><span class="lilypond-repeat function">\repeat</span> <span class="lilypond-specifier variable">volta</span> <span class="lilypond-value value">1</span> <span class="lilypond-delimiter keyword">{
+      </span><span class="lilypond-pitch">a</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-dynamic">\mf</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">a</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">5</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">b</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)(</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">b</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">5</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-check">|
+
+      </span><span class="lilypond-pitch">c</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">a</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">5</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">b</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">5</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">a</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">,</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">c</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">4</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span><span class="lilypond-slur">)</span> <span class="lilypond-check">|
+
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-articulation">_</span><span class="lilypond-markup function">\markup</span><span class="lilypond-delimiter keyword">{</span> <span class="lilypond-markup function">\italic</span> dolce<span class="lilypond-delimiter keyword">}</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">5</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">c</span><span class="lilypond-duration">2</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">a</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">4</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span> <span class="lilypond-check">|
+
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">c</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)</span> <span class="lilypond-command function">\acciaccatura</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-slur">)</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">a</span><span class="lilypond-duration">2</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-delimiter keyword">}
+
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">2</span><span class="lilypond-dynamic">\mf</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">b</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-octave">,</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">fs</span><span class="lilypond-octave">,</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g</span><span class="lilypond-octave">,</span> <span class="lilypond-pitch">b</span><span class="lilypond-octave">,</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">1</span><span class="lilypond-articulation">-</span><span class="lilypond-fingering">5</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-octave">,</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-octave">,</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-octave">,</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+    </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-octave">,</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">1</span><span class="lilypond-articulation">\fermata</span> <span class="lilypond-command function">\bar</span> <span class="lilypond-string string">"|."
+  </span><span class="lilypond-delimiter keyword">}
+}
+
+</span><span class="lilypond-uservariable">lower</span> = <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\clef</span> <span class="lilypond-string string">"bass"
+  </span><span class="lilypond-command function">\key</span> <span class="lilypond-pitch">g</span> <span class="lilypond-command function">\major
+  \time</span> <span class="lilypond-value value">2/2</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">fs c</span><span class="lilypond-octave">'</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-check">|
+    </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+    </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d a</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d g</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+    </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d fs</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-pitch">f</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">f</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">e</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">b</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">,</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+
+    </span><span class="lilypond-repeat function">\repeat</span> <span class="lilypond-specifier variable">volta</span> <span class="lilypond-value value">1</span> <span class="lilypond-delimiter keyword">{
+      </span><span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">a</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">b</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+
+      </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d a</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d fs</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-check">|
+      </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d g</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d e</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-check">|
+      </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d fs</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">r</span><span class="lilypond-duration">1</span> <span class="lilypond-check">|
+
+      </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">fs c</span><span class="lilypond-octave">'</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+      </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+      </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d a</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d g</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+      </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d fs</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-check">|
+
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-pitch">f</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">f</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">e</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">e</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">4</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">b</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span><span class="lilypond-slur">(</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+      </span><span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">,</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-delimiter keyword">}
+
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">b</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">5</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span> <span class="lilypond-pitch">fs</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">2</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">a</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|
+    </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">g b</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">1</span><span class="lilypond-articulation">_</span><span class="lilypond-fingering">3</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">,</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">g</span><span class="lilypond-octave">,</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-octave">,</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">g</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">d</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">b</span><span class="lilypond-octave">,</span><span class="lilypond-duration">4</span> <span class="lilypond-check">|
+    </span><span class="lilypond-pitch">g</span><span class="lilypond-octave">,</span><span class="lilypond-duration">1</span><span class="lilypond-articulation">\fermata</span> <span class="lilypond-command function">\bar</span> <span class="lilypond-string string">"|."
+
+  </span><span class="lilypond-delimiter keyword">}
+}
+
+</span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">PianoStaff</span> = <span class="lilypond-string string">"pianostaff"
+  </span><span class="lilypond-keyword keyword">\with</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-keyword keyword">\override</span> <span class="lilypond-grob">StaffGrouper
+    </span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">staffgroup-staff-spacing
+    </span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">basic-distance</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">0
+    </span><span class="lilypond-keyword keyword">\override</span> <span class="lilypond-grob">DynamicLineSpanner</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">staff-padding</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">2.5</span> <span class="lilypond-comment comment">% Вертикальное позиционирование динамический объектов между нотоносцами.
+    % \textLengthOn
+    % \override TextScript.staff-padding = #2
+  </span><span class="lilypond-delimiter keyword">}
+  &lt;&lt;
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-string string">"upper"</span> <span class="lilypond-usercommand variable">\upper
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-string string">"lower"</span> <span class="lilypond-usercommand variable">\lower
+  </span><span class="lilypond-delimiter keyword">&gt;&gt;
+
+
+  </span><span class="lilypond-keyword keyword">\layout</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-keyword keyword">\context</span> <span class="lilypond-delimiter keyword">{
+      </span><span class="lilypond-context">\Staff
+      </span><span class="lilypond-keyword keyword">\override</span> <span class="lilypond-grob">VerticalAxisGroup</span><span class="lilypond-delimiter keyword">.    </span><span class="lilypond-variable variable">nonstaff-unrelatedstaff-spacing</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">padding</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">5
+      </span><span class="lilypond-comment comment">% \Staff
+      % \override StaffGrouper.staff-staff-spacing.padding = #3
+      % \override StaffGrouper.staff-staff-spacing.basic-distance = #1
+    </span><span class="lilypond-delimiter keyword">}
+  }
+
+  </span><span class="lilypond-keyword keyword">\midi</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-command function">\tempo</span> <span class="lilypond-string string">"Moderato"
+  </span><span class="lilypond-delimiter keyword">}
+}
+</span></pre></body>
+</html>

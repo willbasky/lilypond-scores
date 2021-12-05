@@ -16,7 +16,7 @@ build:
 	SCORE_PATH=${SCORE_PATH} BASE_PATH=${BASE_PATH} docker-compose -p ly2video -f ${LY2VIDEO_PATH}/docker-compose.yml up --build
 
 run:
-	docker run -it -v ${LILY_FILES}:/opt/lily/scores ly2video
+	docker run -it -v ${LILY_FILES}:${SCORE_PATH} ly2video
 
 .PHONY:
 	build
